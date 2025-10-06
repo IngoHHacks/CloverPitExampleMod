@@ -1,0 +1,11 @@
+{
+  "namespace": "IngoH",
+  "name": "CloverPitExampleMod",
+  "description": "Example Mod for CloverPit",
+  "version_number": "1.0.0",
+  "dependencies": [
+    "BepInEx-BepInExPack-5.4.2100",
+    "ModdingAPIs-CloverAPI-0.1.0"
+  ],
+  "website_url": "https://github.com/IngoHHacks/CloverPitExampleMod"
+}
