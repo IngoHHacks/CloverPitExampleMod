@@ -49,10 +49,10 @@ public static class ExampleCharms
             .WithCustomModel(Path.Combine(Plugin.DataPath ,"shark"))
             .BuildAndRegister();
         
-        CustomStrings.Register("[LOAN DATA]", new StringFromCallable(ExampleCharmScript3.LoanDataString));
-        CustomStrings.Register("[DEBT 200%]", new StringFromCallable(ExampleCharmScript3.LoanAmountString));
+        StringManager.Register("[LOAN DATA]", new StringFromCallable(ExampleCharmScript3.LoanDataString));
+        StringManager.Register("[DEBT 200%]", new StringFromCallable(ExampleCharmScript3.LoanAmountString));
 
-        LocalizationManager.Add("LOAN_SHARK_FAILED_TO_PAY", "You don't have enough coins € to pay back your loan...");
+        LocalizationManager.Register("LOAN_SHARK_FAILED_TO_PAY", "You don't have enough coins € to pay back your loan...");
     }
 }
 
