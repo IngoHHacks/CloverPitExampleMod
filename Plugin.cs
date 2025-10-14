@@ -5,6 +5,7 @@ using System.IO;
 namespace CloverPitExampleMod
 {
     [BepInPlugin(PluginGuid, PluginName, PluginVer)]
+    [BepInDependency("ModdingAPIs.cloverpit.CloverAPI")]
     [HarmonyPatch] // If you want to put harmony patches in this class, otherwise you can remove this line. It's recommended to put patches in their own file(s) for larger mods.
     public class Plugin : BaseUnityPlugin
     {
@@ -33,12 +34,16 @@ namespace CloverPitExampleMod
             ImagePath = Path.Combine(PluginPath, MainContentFolder, "Images");
 
             MakeConfig();
+            /*
             ExampleCharms.RegisterCharms();
+            */
         }
         
         private void MakeConfig()
         {
+            /*
             SomeConfigOption = Config.Bind("General", "SomeConfigOption", true, "An example config option.");
+            */
         }
 
 

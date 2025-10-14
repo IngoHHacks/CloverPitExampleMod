@@ -1,7 +1,6 @@
 ﻿using CloverAPI.Classes;
 using CloverAPI.Content.Charms;
 using CloverAPI.Content.Strings;
-using Panik;
 using System.IO;
 using System.Numerics;
 
