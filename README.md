@@ -1,17 +1,18 @@
 # CloverPitExampleMod
-Example Mod for CloverPit
+An example mod for CloverPit.
 
 ## BEFORE YOU START
-Make sure the libraries are up-to-date.  
-I'll update this with new game and API versions regularly, but you will need to pull these (or manually update them) yourself.  
-To manually update the API, copy the latest release of CloverAPI into `lib` (only the DLL, the rest is only needed for runtime).  
-To manually update the game's assembly, use a tool like [publicize](https://github.com/jacobEAdamson/publicize/releases/tag/v1.0.0) or [NStrip](https://github.com/bbepis/NStrip) to strip all contents from `Assembly-CSharp.dll` and make all members public, then copy it into `lib`.  
-DO NOT USE THE UNSTRIPPED ASSEMBLY! Sharing the unstripped assembly is ILLEGAL and you WILL BE SENT TO JAIL.  
-Even if you don't share it, it's still not a good idea to use it when modding because it won't give you access to private members.
+- Make sure the libraries are up-to-date.
+  - I'll update this with new game and API versions regularly, but you will need to pull these (or manually update them) yourself.  
+- To manually update the API, copy the latest release of CloverAPI into `lib` (only the DLL, the rest is only needed for runtime).  
+- To manually update the game's assembly, use a tool like [publicize](https://github.com/jacobEAdamson/publicize/releases/tag/v1.0.0) or [NStrip](https://github.com/bbepis/NStrip) to strip all contents from `Assembly-CSharp.dll` and make all members public, then copy it into `lib`.  
+- If you are a little more advanced, and decide to use the unstripped (normal) `Assembly-CSharp.dll` straight from the game files, make sure you do not upload it or share it. That would be **PIRACY**, which is **ILLEGAL** - you can be fined and sent to jail so **please take this warning seriously**.
+  - Also, for this slightly more advanced method, make sure you use a publicizer like [BepInEx.AssemblyPublicizer.MSBuild](https://github.com/BepInEx/BepInEx.AssemblyPublicizer/blob/master/README.md#from-msbuild).
 
 ## Features
 - Basic mod structure, including patching, logging, and config handling
-- Adds three example charms, which include custom strings for the third one
+- Adds 3 example charms, including custom strings for the third one.
+
 That's it for now, more features will be added in the future.
 
 ## How to use
